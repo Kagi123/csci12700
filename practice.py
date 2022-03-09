@@ -1,8 +1,9 @@
-import numpy as np
-import matplotlib.pyplot as plt
-
-logoimg = np.ones((10,10,3))
-logoimg[:,:3,1] = 0
-
-logoimg[:,-3,1] = 0
-logoimg[4:6,:,1]=0
+for i in range(1,101):
+  if(i%3 == 0 and i%5 == 0):
+    print('FizzBuzz')
+  elif(i%3 == 0):
+    print('Fizz')
+  elif(i%5 == 0):
+    print('Buzz')
+  else:
+    print(i)
