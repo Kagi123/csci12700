@@ -12,5 +12,3 @@ borough = input("Enter borough name: ")
 
 print('Average population: ',pop[borough].mean())
 print('Maximum population:  ',pop[borough].max())
-
-
