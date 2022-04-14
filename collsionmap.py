@@ -13,11 +13,9 @@ mapCUNY = folium.Map(location=[40.768731, -73.964915])
 
 output_File= input('Enter output file: ')
 
-folium.Marker(location = [40.768731, -73.964915], popup = "Hunter College").add_to(mapCUNY)
-
 for index,row in cuny.iterrows():
-    lat = row["Latitude"]
-    lon = row["Longitude"]
+    lat = row["LATITUDE"]
+    lon = row["LONGITUDE"]
     name = row["TIME"]
     newMarker = folium.Marker([lat, lon], popup=name)
     newMarker.add_to(mapCUNY)
