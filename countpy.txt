@@ -1,0 +1,5 @@
+#Name: Sangheum Park
+#Email:sangheum.park27@myhunter.cuny.edu
+#Date: May 4, 2022
+#count .py files
+ls -l *.py | wc -l
